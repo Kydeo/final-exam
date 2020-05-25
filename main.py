@@ -48,7 +48,7 @@ app.app_context().push()
 
 @app.route('/')
 def index():
-  return render_template('home.html')
+  return render_template('app.html')
 
 @app.route('/app')
 def client_app():
