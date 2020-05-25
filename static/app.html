@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontend App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
      <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -23,7 +22,16 @@
         <h1>This view is rendered entierly on the client!</h1>
         <h2>It can be statically served</h2>
     </div>
-    
+    <script src="server.js"></script>
+
+    <script>
+      //Use the server global variable for ALL http request to your flask App
+      //Set the variable in server.js
+      console.log(server);
+
+      //enter ALL javascript for you app here
+
+    </script>
   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
